@@ -15,6 +15,10 @@
 		ABE6106E26E08B1900EE7768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE6106C26E08B1900EE7768 /* LaunchScreen.storyboard */; };
 		ABE6107926E08B1A00EE7768 /* EcuacionesLaurieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6107826E08B1A00EE7768 /* EcuacionesLaurieTests.swift */; };
 		ABE6108426E08B1A00EE7768 /* EcuacionesLaurieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6108326E08B1A00EE7768 /* EcuacionesLaurieUITests.swift */; };
+		ABE6109B26E09BCA00EE7768 /* equationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6109A26E09BCA00EE7768 /* equationSolver.swift */; };
+		ABE610A326E09C0B00EE7768 /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE610A226E09C0B00EE7768 /* Equation.swift */; };
+		ABE610A826E09C1E00EE7768 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE610A726E09C1E00EE7768 /* Result.swift */; };
+		ABE610AD26E0A65400EE7768 /* EcuacionesLaurie_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE610AC26E0A65400EE7768 /* EcuacionesLaurie_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		ABE6107F26E08B1A00EE7768 /* EcuacionesLaurieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcuacionesLaurieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE6108326E08B1A00EE7768 /* EcuacionesLaurieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcuacionesLaurieUITests.swift; sourceTree = "<group>"; };
 		ABE6108526E08B1A00EE7768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE6109A26E09BCA00EE7768 /* equationSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equationSolver.swift; sourceTree = "<group>"; };
+		ABE610A226E09C0B00EE7768 /* Equation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		ABE610A726E09C1E00EE7768 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		ABE610AC26E0A65400EE7768 /* EcuacionesLaurie_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcuacionesLaurie_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		ABE6106026E08B1900EE7768 /* EcuacionesLaurie */ = {
 			isa = PBXGroup;
 			children = (
+				ABE6109726E09B7E00EE7768 /* Model */,
 				ABE6106126E08B1900EE7768 /* AppDelegate.swift */,
 				ABE6106326E08B1900EE7768 /* SceneDelegate.swift */,
 				ABE6106526E08B1900EE7768 /* ViewController.swift */,
@@ -115,6 +124,7 @@
 			children = (
 				ABE6107826E08B1A00EE7768 /* EcuacionesLaurieTests.swift */,
 				ABE6107A26E08B1A00EE7768 /* Info.plist */,
+				ABE610AC26E0A65400EE7768 /* EcuacionesLaurie_Tests.swift */,
 			);
 			path = EcuacionesLaurieTests;
 			sourceTree = "<group>";
@@ -126,6 +136,40 @@
 				ABE6108526E08B1A00EE7768 /* Info.plist */,
 			);
 			path = EcuacionesLaurieUITests;
+			sourceTree = "<group>";
+		};
+		ABE6109726E09B7E00EE7768 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABE610B126E0A9F100EE7768 /* Images */,
+				ABE6109926E09BA200EE7768 /* ValueObject */,
+				ABE6109826E09B8500EE7768 /* Tools */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABE6109826E09B8500EE7768 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				ABE6109A26E09BCA00EE7768 /* equationSolver.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		ABE6109926E09BA200EE7768 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				ABE610A226E09C0B00EE7768 /* Equation.swift */,
+				ABE610A726E09C1E00EE7768 /* Result.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		ABE610B126E0A9F100EE7768 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE610A826E09C1E00EE7768 /* Result.swift in Sources */,
+				ABE6109B26E09BCA00EE7768 /* equationSolver.swift in Sources */,
 				ABE6106626E08B1900EE7768 /* ViewController.swift in Sources */,
+				ABE610A326E09C0B00EE7768 /* Equation.swift in Sources */,
 				ABE6106226E08B1900EE7768 /* AppDelegate.swift in Sources */,
 				ABE6106426E08B1900EE7768 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE610AD26E0A65400EE7768 /* EcuacionesLaurie_Tests.swift in Sources */,
 				ABE6107926E08B1A00EE7768 /* EcuacionesLaurieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
